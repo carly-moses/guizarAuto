@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>G.A.S. - Guizar Automotive Solutions</title>
+    <meta name="description" content="Guizar Automotice Solutions.....">
+    <meta name="keywords" content="auto, automotive, solutions, consulting">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300i,400" rel="stylesheet"></head>
+<body>
+    <nav>
+        <section class="left_nav">
+            <section class="logo_container">
+                <img class="speedometer" src="images/speed.jpg" alt="Car Speedometer">
+            </section>
+            <a class="logo" href="#!home">G.A.S.</h1>
+        </section>
+        <section class="right_nav">
+            <a href="#!home">Home</a>
+            <a href="#!dealer">Dealer Services</a>
+            <a href="#!consumer">Direct Consumer Services</a>
+            <a href="#!finance">Get Approved</a>
+            <a href="#!contact">Contact</a>
+        </section>
+    </nav>
+
+    <ng-view></ng-view>
+
+    <footer>
+        <i class="material-icons">
+        copyright</i> 2018 by Guizar Automotive Solutions
+    </footer>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-route.min.js'></script>
+    <script src="js/module/module.js"></script>
+    <script src="js/config/config.js"></script>
+    <script src="js/service/AutoService.js"></script>
+    <script src="js/components/home.js"></script>
+    <script src="js/components/dealer.js"></script>
+    <script src="js/components/consumer.js"></script>
+    <script src="js/components/finance.js"></script>
+    <script src="js/components/contact.js"></script>
+</body>
+</html>
