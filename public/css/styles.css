@@ -15,6 +15,7 @@ h1 {
     font-weight: 300;
     font-size: 175%;
     font-style: italic;
+    margin: 10px;
 }
 
 h2 {
@@ -23,16 +24,26 @@ h2 {
     font-size: 130%;
 }
 
+h3 {
+    font-weight: 300;
+    font-size: 130%;
+    font-style: italic;
+    margin: 10px;
+}
+
 .logo_container {
     margin: 10px;
-    max-height: 50px;
-    max-width: 55px;
+    max-height: 40px;
+    max-width: 40px;
     overflow: hidden;
     border-radius: 55%;
+    box-shadow: 2px 2px 8px white;
+    border:rgba(255, 0, 0, .5) solid 1px; 
 }
 .speedometer {
     width: 75px;
-    height: 100px;
+    height: 50px;
+    margin: 0px;
 }
 
 .left_nav {
@@ -49,10 +60,17 @@ nav {
     display: flex;
     flex-direction: column;
 }
+img {
+    width: 250px;
+    height: 200px;
+    margin: 15px;
+    border-radius: 10px;
+}
 
 .logo {
     font-size: 185%;
     font-family: 'Glegoo', serif;
+    text-shadow: 1px 1px red;
 }
 
 a {
@@ -60,19 +78,32 @@ a {
     color: white;
 }
 
-.home {
-    text-align: center;
+p {
+    padding: 10px;
 }
 
-img {
-    width: 250px;
-    height: 200px;
+.home {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.home_img {
+    width: 145px;
+    height: 175px;
+    border-radius: 100px;
 }
 
 .container {
     width: 250px;
     min-height: 100px;
+    padding: 10px;
+    margin: 0 auto;
     background:rgba(192,192,192,0.3);
+    border-radius: 10px;
+}
+
+.dealer_p {
+    padding: 10px 40px;
 }
 
 .services {
@@ -82,11 +113,78 @@ img {
     align-items: center;
 }
 
-footer {
-    /* display: flex;
+.index_contact {
     position: fixed;
-    padding: 10px; */
-    margin-bottom: 10px;
-    /* margin: 0 auto;*/ 
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.index_contact i {
+    color: red;
+    margin-top: 3px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: white 1px solid;
+    width: 75%;
+    margin: 0 auto;
+    background: rgba(192,192,192,0.3);
+    padding:20px;
+}
+
+input, textarea {
+    width: 80%;
+    margin: 10px 0px;
+}
+
+input:focus, textarea:focus { 
+    outline: none;
+    border-color: rgba(255, 0, 0);
+    box-shadow: 0 0 10px rgba(255, 0, 0);
+}
+
+textarea {
+    min-height: 100px;
+}
+
+button {
+    width: 50%;
+    height: 20px;
+    background: red;
+    outline: 0;
+    border-color: white;
+}
+
+button:active {
+    box-shadow: 0 0 10px white;
+}
+
+.contact_heading {
+    position: relative;
+}
+
+.contact_title {
+    position: absolute;
+    top: 82%;
+    left: 48%;
+    font-size: 157%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0px;
+    width: 100%;
+    height: 35px;
+    background: rgba(192,192,192,0.3);
 }
 

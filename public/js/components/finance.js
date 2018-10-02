@@ -4,8 +4,8 @@ const finance = {
     template: `
         <section>
             <img src="images/approved.jpg" alt="Finance form with the stamp of APPROVAL">
-            <h1>Apply today for our great financing options.
-            Prequalify for the vehicle you want.</h1>
+            <h3>Apply today for our great financing options.
+            Prequalify for the vehicle you want.</h3>
             <form>
                 <input type="text" placeholder="*Name">
                 <input type="text" placeholder="*Email">

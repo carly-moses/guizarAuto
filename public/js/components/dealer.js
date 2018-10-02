@@ -4,7 +4,7 @@ const dealer = {
     template:`
         <section class="dealer">
             <h1> DEALER SERVICES</h1>
-            <p>Let G.A.S. add a little real gas to the fire with our dealership solutions</p>
+            <p class="dealer_p">Let G.A.S. add a little real gas to the fire with our dealership solutions</p>
             <section class="services">
                 <img src="images/arial.jpg" src="Aerial view of a car lot">
                 <section class="container">
