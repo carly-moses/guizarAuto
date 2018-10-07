@@ -8,7 +8,6 @@ body {
     position: relative;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    text-align: center;
 }
 
 h1 {
@@ -16,6 +15,7 @@ h1 {
     font-size: 175%;
     font-style: italic;
     margin: 10px;
+    text-align: center;
 }
 
 h2 {
@@ -29,8 +29,12 @@ h3 {
     font-size: 130%;
     font-style: italic;
     margin: 10px;
+    text-align: center;
 }
 
+/* ---Navbar CSS-----*/
+
+/* Speedometer/logo on all pages in the NAV*/
 .logo_container {
     margin: 10px;
     max-height: 40px;
@@ -40,26 +44,67 @@ h3 {
     box-shadow: 2px 2px 8px white;
     border:rgba(255, 0, 0, .5) solid 1px; 
 }
+
 .speedometer {
     width: 75px;
     height: 50px;
     margin: 0px;
 }
 
-.left_nav {
+.navbar_logo {
     display: flex;
     align-items: center;
 }
+/* End Speedometer Settings continue navbar settings */
 
-nav {
+.navbar {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    /* flex-direction: column; */
 }
 
-.right_nav {
+.nav_right {
     display: flex;
     flex-direction: column;
+    margin: 20px 10px 0px 0px;
 }
+
+/* .nav_items { */
+    /* display: none;
+    background:black; */
+    /* width: 100%;
+    height: 90%; */
+    /* position: fixed;
+    z-index: 100;
+    margin-top:55px; */
+/* } */
+
+/* .navbar_link {
+    padding-left: 8px;
+} */
+
+/* .navbar_toggle {
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    top: 15px;
+} */
+
+/* .navbar_toggleShow {
+    display: flex;
+} */
+
+a {
+    text-decoration: none;
+    color: white;
+    text-align: end;
+    
+}
+
+
+/*----------- End Navbar CSS ----------*/
+
+
 img {
     width: 250px;
     height: 200px;
@@ -73,13 +118,9 @@ img {
     text-shadow: 1px 1px red;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
 p {
     padding: 10px;
+    text-align: center;
 }
 
 .home {
@@ -88,13 +129,13 @@ p {
 }
 
 .home_img {
-    width: 145px;
-    height: 175px;
+    width: 130px;
+    height: 150px;
     border-radius: 100px;
 }
 
 .container {
-    width: 250px;
+    width: 275px;
     min-height: 100px;
     padding: 10px;
     margin: 0 auto;
@@ -117,7 +158,7 @@ p {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 30px;
+    height: 75px;
     background: white;
     display: flex;
     justify-content: space-around;
@@ -125,8 +166,10 @@ p {
 
 .index_contact i {
     color: red;
-    margin-top: 3px;
+    margin-top: 5px;
+    font-size: 60px;
 }
+
 
 form {
     display: flex;
@@ -168,24 +211,43 @@ button:active {
 }
 
 .contact_heading {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact_title {
-    position: absolute;
-    top: 82%;
-    left: 48%;
-    font-size: 157%;
-    transform: translate(-50%, -50%);
+   margin-top: -30px;
 }
 
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 35px 0px;
+    margin: 20px 0px 75px 0px;
     width: 100%;
     height: 35px;
     background: rgba(192,192,192,0.3);
 }
 
+@media only screen and (min-width: 768px){
+    .navbar {
+        flex-direction: row;
+    }
+    .nav_items {
+        display: inline-block;
+        display: flex;
+        flex-direction: row;
+    }
+    .nav_right {
+        flex-direction: row;
+        margin-left: auto;
+    }
+
+    .navbar_link {
+    padding-right: 8px;
+    }
+    .navbar_toggle {
+        display: none;
+    }
+}
