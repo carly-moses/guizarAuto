@@ -5,10 +5,14 @@ body {
     background: black;
     color: white;
     /* in order for footer to stay at bottom */
-    position: relative;
+    /* position: relative; */
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
 }
+
+/* --------------------------------------------------------- */
+/* ----------------------Header Tags--------------------------*/
+/* --------------------------------------------------------- */
 
 h1 {
     font-weight: 300;
@@ -24,17 +28,17 @@ h2 {
     font-size: 130%;
 }
 
-h3 {
+h4 {
     font-weight: 300;
-    font-size: 130%;
+    font-size: 18px;
     font-style: italic;
-    margin: 10px;
+    margin: 15px;
     text-align: center;
 }
-
-/* ---Navbar CSS-----*/
-
-/* Speedometer/logo on all pages in the NAV*/
+/* --------------------------------------------------------- */
+/* ----------------------Navbar CSS--------------------------*/
+/* --------------------------------------------------------- */
+          /* Speedometer/logo on all pages in the NAVBAR*/
 .logo_container {
     margin: 10px;
     max-height: 40px;
@@ -55,93 +59,94 @@ h3 {
     display: flex;
     align-items: center;
 }
-/* End Speedometer Settings continue navbar settings */
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    /* flex-direction: column; */
-}
-
-.nav_right {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 10px 0px 0px;
-}
-
-/* .nav_items { */
-    /* display: none;
-    background:black; */
-    /* width: 100%;
-    height: 90%; */
-    /* position: fixed;
-    z-index: 100;
-    margin-top:55px; */
-/* } */
-
-/* .navbar_link {
-    padding-left: 8px;
-} */
-
-/* .navbar_toggle {
-    position: absolute;
-    cursor: pointer;
-    right: 10px;
-    top: 15px;
-} */
-
-/* .navbar_toggleShow {
-    display: flex;
-} */
-
-a {
-    text-decoration: none;
-    color: white;
-    text-align: end;
-    
-}
-
-
-/*----------- End Navbar CSS ----------*/
-
-
-img {
-    width: 250px;
-    height: 200px;
-    margin: 15px;
-    border-radius: 10px;
-}
 
 .logo {
     font-size: 185%;
     font-family: 'Glegoo', serif;
     text-shadow: 1px 1px red;
 }
+          /* End Speedometer Settings continue navbar settings */
+
+.flex_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    background: black;
+    height: 100vh;
+    width: 100vw;
+}
+
+.nav_right a {
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-align: end;
+    font-size: 30px;
+  
+
+}
+
+.hamburger_nav i{
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 40px;
+}
+/* --------------------------------------------------------- */
+/*------------------ ELEMENTS ON MANY PAGES -----------------*/
+/* --------------------------------------------------------- */
+
+
+img {
+    width: 310px;
+    height: 200px;
+    margin: 15px;
+    /* border-radius: 10px; */
+}
+
+.container {
+    width: 300px;
+    min-height: 150px;
+    padding: 10px;
+    margin: 10px auto;
+    background:rgba(192,192,192,0.3);
+    /* border-radius: 10px; */
+}
 
 p {
     padding: 10px;
     text-align: center;
 }
+/* --------------------------------------------------------- */
+/*------------------------- HOME PAGE -----------------------*/
+/* --------------------------------------------------------- */
 
 .home {
-    text-align: center;
-    margin: 0 auto;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .home_img {
-    width: 130px;
-    height: 150px;
+    width: 150px;
+    height: 200px;
     border-radius: 100px;
 }
 
-.container {
-    width: 275px;
-    min-height: 100px;
-    padding: 10px;
-    margin: 0 auto;
-    background:rgba(192,192,192,0.3);
-    border-radius: 10px;
-}
+/* --------------------------------------------------------- */
+/*------------------------- DEALER PAGE -----------------------*/
+/* --------------------------------------------------------- */
 
 .dealer_p {
     padding: 10px 40px;
@@ -154,22 +159,32 @@ p {
     align-items: center;
 }
 
-.index_contact {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 75px;
-    background: white;
+/* --------------------------------------------------------- */
+/*------------------------- FINANCE PAGE -----------------------*/
+/* --------------------------------------------------------- */
+
+.approved {
+    height: 180px;
+    width: 280px;
+}
+
+/* --------------------------------------------------------- */
+/*------------------------- CONTACT PAGE -----------------------*/
+/* --------------------------------------------------------- */
+
+.contact_heading {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 }
 
-.index_contact i {
-    color: red;
-    margin-top: 5px;
-    font-size: 60px;
+.contact_title {
+   margin-top: -30px;
 }
 
+/* --------------------------------------------------------- */
+/*------------------------- BOTH FORMS -----------------------*/
+/* --------------------------------------------------------- */
 
 form {
     display: flex;
@@ -183,7 +198,7 @@ form {
 }
 
 input, textarea {
-    width: 80%;
+    width: 90%;
     margin: 10px 0px;
 }
 
@@ -210,44 +225,129 @@ button:active {
     box-shadow: 0 0 10px white;
 }
 
-.contact_heading {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact_title {
-   margin-top: -30px;
-}
+/* --------------------------------------------------------- */
+/*-------------------------- FOOTER -------------------------*/
+/* --------------------------------------------------------- */
 
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0px 75px 0px;
+    margin-top: 40px;
+    /* margin: 20px 0px 60px 0px; */
     width: 100%;
     height: 35px;
-    background: rgba(192,192,192,0.3);
+    /* background: rgba(192,192,192,0.3); */
 }
 
+.index_contact {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* height: 60px; */
+    background: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.index_contact i {
+    color: red;
+    margin-top: 5px;
+    font-size: 50px;
+}
+
+.copyright {
+    display: none;
+}
+
+/* --------------------------------------------------------- */
+/*------------------------- MEDIA QUERY----------------------*/
+/* --------------------------------------------------------- */
+
 @media only screen and (min-width: 768px){
-    .navbar {
-        flex-direction: row;
-    }
-    .nav_items {
-        display: inline-block;
-        display: flex;
-        flex-direction: row;
-    }
-    .nav_right {
-        flex-direction: row;
-        margin-left: auto;
+    /*------------------------- ALL PAGES----------------------*/
+    .container {
+        width: 600px;
+        max-height: 400px;
     }
 
-    .navbar_link {
-    padding-right: 8px;
+    h1 {
+        font-size: 300%;
     }
-    .navbar_toggle {
-        display: none;
+
+    h2 {
+        font-size: 200%;
     }
+
+    h3 {
+        font-size: 200%;
+    }
+
+    p {
+        font-size: 175%;
+    }
+
+    img {
+        width: 80%;
+        height: 70%;
+    }
+    /*------------------------- NAV----------------------*/
+    .speedometer{
+        width: 120px;
+        height: 100px;
+    }
+
+    .logo_container {
+        max-width: 70px;
+        max-height: 70px;
+    }
+
+    .logo {
+        font-size: 300%
+    }
+
+    .hamburger_nav i {
+        font-size: 70px;
+    }
+    /*------------------------- HOME----------------------*/
+    .home_img {
+        height: 350px;
+        width: 300px;
+    }
+
+    home h1 {
+        margin-bottom: 8%;
+    }
+    /*------------------------- FINANCE----------------------*/
+    .approved {
+        width: 60%;
+        height: 50%;
+    }
+
+    h4 {
+        font-size: 150%;
+        margin: 1%;
+    }
+    /*------------------------- FORM----------------------*/
+
+    form {
+        height: 400px;
+    }
+
+    input {
+        height: 30px;
+    }
+
+    textarea {
+        height: 45%;
+    }
+
+    button {
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .contact_title {
+        margin-top: -60px;
+     }
 }

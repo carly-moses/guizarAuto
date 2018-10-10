@@ -12,61 +12,22 @@
       rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300i,400" rel="stylesheet"></head>
 <body>
-    <nav class="navbar">
-        <section class="navbar_link navbar_logo">
-            <!-- container needed for styling purposes -->
-                <section class="logo_container">
-                        <a href="#!home"><img class="speedometer" src="images/speed.jpg" alt="Car Speedometer"></a>
-                </section>
-                <a class="logo" href="#!home">G.A.S.</h1>
-        </section>
-        <!-- <section class="navbar_toggle">
-            <i class="material-icons">dehaze</i>
-        </section> -->
-        <section class="nav_right nav_items">
-            <a class="test" href="#!home">Home</a> 
-            <a class="test" href="#!dealer">Dealer Services</a> 
-            <a class="test" href="#!consumer">Direct Consumer Services</a> 
-            <a class="test" href="#!finance">Get Approved</a> 
-            <a class="test" href="#!contact">Contact</a>
-        </section>
-    </nav>
 
-    <script>
-
-        // function classToggle() {
-        //     const navs = document.querySelectorAll('.nav_items')
-    
-        //     navs.forEach(nav => nav.classList.toggle('navbar_toggleShow'));
-        // }
-        
-        // document.querySelector('.navbar_toggle').addEventListener('click',classToggle);
-
-        // function hideNav() {
-        //     const navs = document.querySelectorAll('.nav_items')
-    
-        //     navs.forEach(nav => nav.classList.toggle('navbar_toggleHide'));
-        // }
-
-//         document.querySelector(".navbar_toggle").addEventListener('click',function(e) {
-//     if( document.e.target.is('a') ) {
-//         document.this.collapse('hide');
-//     }
-// });
-        // document.querySelector('.navbar_toggle').addEventListener('click',hideNav);
-    
-    </script>
+    <navbar></navbar>
 
     <ng-view></ng-view>
 
-    <section class="index_contact">
-        <a href="tel:248-974-6393"><i class="material-icons">call</i></a>
-        <a href="mailto:email@echoecho.com?subject=SweetWords"><i class="material-icons">email</i></a> 
-    </section>
+ 
 
     <footer>
-        <i class="material-icons">
-        copyright</i> 2018 by Guizar Automotive Solutions
+        <section class="index_contact">
+            <a href="tel:248-974-6393"><i class="material-icons">call</i></a>
+            <a href="mailto:email@echoecho.com?subject=SweetWords"><i class="material-icons">email</i></a> 
+        </section>
+        <section class="copyright">
+                <i class="material-icons">copyright</i> 2018 by Guizar Automotive Solutions
+        </section>
+        
     </footer>
 
     <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js'></script>
@@ -74,6 +35,7 @@
     <script src="js/module/module.js"></script>
     <script src="js/config/config.js"></script>
     <script src="js/service/AutoService.js"></script>
+    <script src="js/components/navbar.js"></script>
     <script src="js/components/home.js"></script>
     <script src="js/components/dealer.js"></script>
     <script src="js/components/consumer.js"></script>
